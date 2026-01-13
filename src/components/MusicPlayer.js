@@ -54,17 +54,6 @@ const MusicPlayer = () => {
     }
   }, [volume, isMuted]);
 
-  const togglePlay = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
   const toggleMute = () => {
     setIsMuted(!isMuted);
   };
